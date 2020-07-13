@@ -194,6 +194,12 @@ def serialize(resource):
         return serialize_instance(resource)
 
 
+def persist_instances2(metamodel, f):
+    for inst in metamodel.instances:
+        s = serialize_instance(inst)
+        f.write(s)
+
+
 def persist_instances(metamodel, path, mode='w'):
     '''
     Persist all instances in a *metamodel* by serializing them and saving to a 

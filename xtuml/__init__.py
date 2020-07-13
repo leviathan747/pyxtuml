@@ -36,6 +36,7 @@ from .load import ModelLoader
 
 from .persist import persist_database
 from .persist import persist_instances
+from .persist import persist_instances2
 from .persist import persist_schema
 from .persist import persist_unique_identifiers
 
